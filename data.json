@@ -1,3 +1,19 @@
-{
-  "firstName": "Tundra"
+{	
+	"greeting": "Hi",
+	"firstName": "Tundra",
+	"introCopy": "Lorem ipsum dolor sit amet",
+	"profiles": [
+		{
+			"name": "Adam",
+			"email": "adam@tundra.com.au"
+		},
+		{
+			"name": "Alexander",
+			"email": "alexander@tundra.com.au"
+		},
+		{
+			"name": "Mendoza",
+			"email": "khristian@tundra.com.au"
+		}
+	]
 }
