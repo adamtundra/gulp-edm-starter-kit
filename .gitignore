@@ -4,6 +4,9 @@ _creative
 bower_components
 node_modules
 
+templates
+dist
+
 .awspublish-*
 credentials.json
 

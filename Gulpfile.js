@@ -10,6 +10,8 @@ var premailer = require('gulp-premailer');
 
 var inlinesource = require('gulp-inline-source');
 
+var handlebars = require('gulp-compile-handlebars');
+
 var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
 
@@ -28,6 +30,9 @@ try {
 
 var paths = {
 	src: {
+		handlebars: 'handlebars/*.handlebars',
+		hpartials: 'handlebars/partials/*.handlebars',
+		partials: 'handlebars/partials',
 		html: 'templates/*.tpl.html',
 		sass: 'styles/**/*.scss',
 		styles: 'styles/',
@@ -36,6 +41,7 @@ var paths = {
 	},
 	dist: {
 		build: 'dist/',
+		handlebars: 'templates/',
 		html: 'dist/*.html',
 		images: 'dist/images/'
 	}
@@ -65,6 +71,24 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest(paths.src.styles));
 });
 
+/**
+ * Handlebars
+ */
+
+gulp.task('handlebars', function() {
+	var templateData = {
+        firstName: 'Tundra'
+    },
+	options = {
+	    ignorePartials: true, // Ignores non-existing partials handlebars template, defaults to false
+	    batch : [paths.src.partials]
+	}
+	return gulp.src(paths.src.handlebars)
+        .pipe(handlebars(templateData, options))
+        .pipe(rename('index.tpl.html'))
+        .pipe(gulp.dest(paths.dist.handlebars));
+
+});
 
 /**
  * Inline
@@ -218,12 +242,14 @@ gulp.task('watch', function() {
 	dev = true;
 	gulp.watch(paths.src.sass, ['sass', 'inline']);
 	gulp.watch(paths.src.images, ['imagemin']);
-	gulp.watch(paths.src.html, ['inline']);
+	gulp.watch(paths.src.handlebars, ['handlebars', 'inline']);
+	gulp.watch(paths.src.hpartials, ['handlebars', 'inline']);
+
 });
 
 gulp.task('clean', require('del').bind(null, [paths.dist.build] ));
 
-gulp.task('build-html', ['clean', 'sass', 'inline']);
+gulp.task('build-html', ['clean', 'sass', 'handlebars', 'inline']);
 
 gulp.task('build-images', ['imagemin']);
 
