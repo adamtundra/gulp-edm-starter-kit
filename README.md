@@ -26,8 +26,7 @@ Starts a server with browsersync in the `/dist` directory: `http://localhost:300
 
 ### Stylesheets
 
-`/styles/styles.scss` is compiled to `/styles/styles.css`
-`/styles/kinetic.scss` is compiled to `/styles/kinetic.css`
+`/styles/styles.scss` is compiled to `/styles/styles.css` and `/styles/kinetic.scss` is compiled to `/styles/kinetic.css`.
 
 There are 3 CSS files included in the `<head>` tag:
 
@@ -39,6 +38,15 @@ These styles are rendered as an inline `<style>` block in the `<head>` of the HT
 
 #### data.css *(optional)*
 This file is hosted externally and is not inlined anywhere on the page. It is used for pulling in dynamic pseudo element 'content' data from a server generated .css file.
+
+### Handlebars
+
+Handlebars.js is used as the templating language. This allows support for partials, variables, functions and offers more flexibility/organisation than regular HTML.
+
+The master template file is `handlebars/index.handlebars` which also includes partials from the `handlebars/partials` directory. This gets compiled to `dist/.index.html` as the final HTML output.
+
+[For Handlebars.js syntax, see http://handlebarsjs.com/](http://handlebarsjs.com/)
+
 
 ## Build
 
