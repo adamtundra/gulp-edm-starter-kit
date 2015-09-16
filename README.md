@@ -47,6 +47,9 @@ The master template file is `handlebars/index.handlebars` which also includes pa
 
 [For Handlebars.js syntax, see http://handlebarsjs.com/](http://handlebarsjs.com/)
 
+### JSON Data
+
+Global data is located inside a file called `data.json` stored in the root directory. Data can be added in this file and passed and printed in a .handlebars template file using the `{{firstName}}` syntax. You can use this file to store strings, image paths etc to keep the data and templating seperated from each other.
 
 ## Build
 
