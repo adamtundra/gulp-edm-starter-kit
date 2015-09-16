@@ -92,11 +92,7 @@ The email subject line is set in this order:
 2. The `subject` property in `package.json`
 3. The `name` property in `package.json`
 
-## Templates
-
-All `*.tpl.html` files in `/templates` are processed into `/dist`.
-
-There is a very basic shell provided (`/templates/index.tpl.php`).
+## MailChimp & Campaign Monitor Documentation
 
 Campaign Monitor template language reference: https://www.campaignmonitor.com/create/
 
