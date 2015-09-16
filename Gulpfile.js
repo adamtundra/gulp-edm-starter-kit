@@ -20,7 +20,9 @@ var litmus = require('gulp-litmus');
 var replace = require('gulp-replace');
 var sendmail = require('gulp-mailgun');
 
+var fs = require('fs');
 var pjson = require('./package.json');
+var data = require('gulp-data');
 
 try {
 	var credentials = require('./credentials.json');
@@ -29,6 +31,9 @@ try {
 }
 
 var paths = {
+	data: {
+		template: './data.json',
+	},
 	src: {
 		handlebars: 'handlebars/*.handlebars',
 		hpartials: 'handlebars/partials/*.handlebars',
@@ -76,14 +81,20 @@ gulp.task('sass', function() {
  */
 
 gulp.task('handlebars', function() {
-	var templateData = {
-        firstName: 'Tundra'
-    },
+	var templateData =  {},
 	options = {
-	    ignorePartials: true, // Ignores non-existing partials handlebars template, defaults to false
-	    batch : [paths.src.partials]
+	    ignorePartials: true,
+	    batch : [paths.src.partials],
+        helpers : {
+            // example : function(str){
+            //     return str.toUpperCase();
+            // }
+        }
 	}
 	return gulp.src(paths.src.handlebars)
+		.pipe(data(function(file) {
+	      return JSON.parse(fs.readFileSync(paths.data.template));
+	    }))
         .pipe(handlebars(templateData, options))
         .pipe(rename('index.tpl.html'))
         .pipe(gulp.dest(paths.dist.handlebars));
@@ -243,6 +254,7 @@ gulp.task('watch', function() {
 	gulp.watch(paths.src.sass, ['sass', 'inline']);
 	gulp.watch(paths.src.images, ['imagemin']);
 	gulp.watch(paths.src.handlebars, ['handlebars', 'inline']);
+	gulp.watch(paths.data.template, ['handlebars', 'inline']);
 	gulp.watch(paths.src.hpartials, ['handlebars', 'inline']);
 
 });
