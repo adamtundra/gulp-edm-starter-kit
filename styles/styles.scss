@@ -24,6 +24,7 @@ $include-html-panel-classes: false;
 
 $white: #FFFFFF;
 $black: #000000;
+$grey: #EEEEEE;
 
 
 /* Type */
@@ -55,7 +56,8 @@ $black: #000000;
 
 /* Custom settings */
 
-$bg-color: $white;
+$bg-color: $grey;
+$main-bg-color: $white;
 
 
 /* Desktop Styles */
@@ -87,6 +89,7 @@ table.header {
 }
 
 table.main {
+	background-color: $main-bg-color;
 }
 
 table.footer {

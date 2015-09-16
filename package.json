@@ -9,6 +9,7 @@
     "gulp": "^3.8.2",
     "gulp-awspublish": "^1.0.1",
     "gulp-imagemin": "^0.6.1",
+    "gulp-inline-source": "^2.1.0",
     "gulp-litmus": "0.0.7",
     "gulp-mailgun": "0.0.4",
     "gulp-premailer": "^0.4.0",

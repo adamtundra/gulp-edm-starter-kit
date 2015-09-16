@@ -8,6 +8,8 @@ var zip = require('gulp-zip');
 var sass = require('gulp-sass');
 var premailer = require('gulp-premailer');
 
+var inlinesource = require('gulp-inline-source');
+
 var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
 
@@ -27,7 +29,7 @@ try {
 var paths = {
 	src: {
 		html: 'templates/*.tpl.html',
-		sass: 'styles/*.scss',
+		sass: 'styles/**/*.scss',
 		styles: 'styles/',
 		images: 'images/**/*',
 		bower: 'bower_components/'
@@ -73,13 +75,13 @@ gulp.task('inline', function() {
 		.pipe(premailer({
 			entities: true
 		}))
+		.pipe(inlinesource())
 		.pipe(rename(function (path) {
 			path.basename = path.basename.replace('.tpl', '');
 		}))
 		.pipe(gulp.dest(paths.dist.build))
 		.pipe( dev ? browserSync.reload({ stream: true, once: true }) : gutil.noop() );
 });
-
 
 /**
  * Images
