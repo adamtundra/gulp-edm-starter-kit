@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	<span class="preheader">{{> preheader}}</span>
+	<span class="preheader">Preheader text</span>
 	<table class="body">
 		<tr>
 			<td class="center" align="center" valign="top">
@@ -83,11 +83,11 @@
 												</tr>
 											</table>
 
-											{{> feed}}
-
 										</td>
 									</tr>
 								</table>
+
+								{% include "components/feed.nunj" %}
 
 							</td>
 						</tr>

@@ -1,0 +1,154 @@
+// Settings
+
+$feed-total-items: 15;
+$feed-initial-visible-items: 6;
+
+$feed-item-height: 80px;
+$feed-item-width: 600px;
+$feed-item-margin: 2px;
+$feed-item-background-color: #FFF;
+
+$feed-item-avatar-size: 70px;
+$feed-item-content-size: 470px;
+
+$feed-wrapper-gradient-color: #FFF;
+$feed-wrapper-gradient-size: 30px;
+$feed-wrapper-height: ($feed-initial-visible-items * $feed-item-height) + ($feed-item-margin * $feed-initial-visible-items);
+$feed-items-to-animate: ($feed-total-items - $feed-initial-visible-items);
+$feed-animation-delay: 3s;
+
+$slide-animation-duration: 2s;
+$appear-animation-duration: 3s;
+
+// Feed Wrapper
+
+.feed__wrapper {
+    position: relative;
+    height: $feed-wrapper-height;
+    overflow: hidden;
+}
+
+.feed__wrapper::after {
+    bottom: 0px;
+    background-image: -moz-linear-gradient(top, rgba($feed-wrapper-gradient-color, 0) 0%, $feed-wrapper-gradient-color 100%);
+    background-image: -webkit-linear-gradient(top, rgba($feed-wrapper-gradient-color, 0) 0%, $feed-wrapper-gradient-color 100%);
+    background-image: linear-gradient(to bottom, rgba($feed-wrapper-gradient-color, 0) 0%, $feed-wrapper-gradient-color 100%);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: $feed-wrapper-gradient-size;
+    z-index: 10;
+}
+
+.feed__item {
+    background-color: #ffffff;
+    width: $feed-item-width;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 auto $feed-item-margin auto;
+    min-height: $feed-item-height;
+    display: table;
+    border: 3px solid #333333;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes slide {
+  to { margin-top: 5px; }
+}
+
+@-webkit-keyframes appear {
+  to { opacity: 1 }
+}
+
+.feed__item--slide {
+    margin-top: -100%;
+    opacity: 0;
+    -webkit-animation: slide $slide-animation-duration ease-in-out forwards, appear $appear-animation-duration ease-in-out forwards;
+}
+
+.feed__container { 
+  overflow: hidden;
+  position: relative;
+}
+
+// Loop items and add animation
+@for $i from 0 through $feed-items-to-animate {
+
+    #feed-#{($i+ $feed-initial-visible-items)} {
+      -webkit-animation-delay: $i * $feed-animation-delay;
+    }
+
+}
+
+// Prevent Animation from initial items
+@for $i from 0 through $feed-initial-visible-items {
+
+    #feed-#{$i} {
+      opacity: 1;
+      -webkit-animation: none;
+      margin-top: 0;
+    }
+
+}
+
+.feed__item:hover {
+    cursor: pointer;
+    border-color: #7fbbc0;
+}
+
+.feed__avatar {
+    width: $feed-item-avatar-size;
+    float: left;
+}
+
+.feed__content {
+    width: $feed-item-content-size;
+    float: left;
+}
+
+.feed__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-size: cover !important;
+}
+
+.feed__text--name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #111111;
+}
+
+.feed__text--handle {
+    color: #7fbbc0;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.feed__text--copy {
+    color: #666666;
+    margin-top: 5px;
+    display: block;
+}
+
+.feed__text--timestamp {
+    color: #999999;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.feed__text--timestamp::before {
+    content: '\2022';
+    margin-right: 5px;
+}
+
+.feed__text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}

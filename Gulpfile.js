@@ -10,7 +10,8 @@ var premailer = require('gulp-premailer');
 
 var inlinesource = require('gulp-inline-source');
 
-var handlebars = require('gulp-compile-handlebars');
+var nunjucks = require('gulp-nunjucks-html');
+var frontMatter = require('gulp-front-matter');
 
 var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
@@ -35,9 +36,8 @@ var paths = {
 		template: './data.json',
 	},
 	src: {
-		handlebars: 'handlebars/*.handlebars',
-		hpartials: 'handlebars/partials/*.handlebars',
-		partials: 'handlebars/partials',
+		nunjucks: 'nunjucks/**/*.nunj',
+		includes: 'nunjucks/',
 		html: 'templates/*.tpl.html',
 		sass: 'styles/**/*.scss',
 		styles: 'styles/',
@@ -46,7 +46,7 @@ var paths = {
 	},
 	dist: {
 		build: 'dist/',
-		handlebars: 'templates/',
+		nunjucks: 'templates/',
 		html: 'dist/*.html',
 		images: 'dist/images/'
 	}
@@ -77,28 +77,27 @@ gulp.task('sass', function() {
 });
 
 /**
- * Handlebars
+ * Nunjucks
  */
 
-gulp.task('handlebars', function() {
-	var templateData =  {},
-	options = {
-	    ignorePartials: true,
-	    batch : [paths.src.partials],
-        helpers : {
-            // example : function(str){
-            //     return str.toUpperCase();
-            // }
-        }
-	}
-	return gulp.src(paths.src.handlebars)
-		.pipe(data(function(file) {
-	      return JSON.parse(fs.readFileSync(paths.data.template));
-	    }))
-        .pipe(handlebars(templateData, options))
-        .pipe(rename('index.tpl.html'))
-        .pipe(gulp.dest(paths.dist.handlebars));
-
+gulp.task('nunjucks', function() {
+  return gulp.src(paths.src.nunjucks)
+    // Get data from a JSON file 
+    .pipe(data(function(file) {
+      return require(paths.data.template);
+    }))
+    // Extract the FrontMatter 
+    .pipe(frontMatter())
+    // Context is the FrontMatter of the file and the JSON data, plus the locals object. 
+    .pipe(nunjucks({
+    	searchPaths: [paths.src.includes],
+      	locals: { apiKey: 'secret-key-here' }
+    }))
+	.pipe(rename(function (path) {
+	    path.basename += ".tpl";
+	    path.extname = ".html";
+	}))
+    .pipe(gulp.dest(paths.dist.nunjucks));
 });
 
 /**
@@ -253,15 +252,13 @@ gulp.task('watch', function() {
 	dev = true;
 	gulp.watch(paths.src.sass, ['sass', 'inline']);
 	gulp.watch(paths.src.images, ['imagemin']);
-	gulp.watch(paths.src.handlebars, ['handlebars', 'inline']);
-	gulp.watch(paths.data.template, ['handlebars', 'inline']);
-	gulp.watch(paths.src.hpartials, ['handlebars', 'inline']);
-
+	gulp.watch(paths.data.template, ['nunjucks', 'inline']);
+	gulp.watch(paths.src.nunjucks, ['nunjucks', 'inline']);
 });
 
 gulp.task('clean', require('del').bind(null, [paths.dist.build] ));
 
-gulp.task('build-html', ['clean', 'sass', 'handlebars', 'inline']);
+gulp.task('build-html', ['clean', 'sass', 'nunjucks', 'inline']);
 
 gulp.task('build-images', ['imagemin']);
 

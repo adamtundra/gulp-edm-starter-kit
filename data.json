@@ -3,17 +3,50 @@
 	"firstName": "Tundra",
 	"introCopy": "Lorem ipsum dolor sit amet",
 	"profiles": [
-		{
-			"name": "Adam",
-			"email": "adam@tundra.com.au"
+		{	
+			"name": "Adam"
 		},
 		{
-			"name": "Alexander",
-			"email": "alexander@tundra.com.au"
+			"name": "Alexander"
 		},
 		{
-			"name": "Mendoza",
-			"email": "khristian@tundra.com.au"
+			"name": "Mendoza"
+		},
+		{
+			"name": "Janita"
+		},
+		{
+			"name": "Jamie"
+		},
+		{	
+			"name": "Adam"
+		},
+		{
+			"name": "Alexander"
+		},
+		{
+			"name": "Mendoza"
+		},
+		{
+			"name": "Janita"
+		},
+		{
+			"name": "Jamie"
+		},
+		{	
+			"name": "Adam"
+		},
+		{
+			"name": "Alexander"
+		},
+		{
+			"name": "Mendoza"
+		},
+		{
+			"name": "Janita"
+		},
+		{
+			"name": "Jamie"
 		}
 	]
 }

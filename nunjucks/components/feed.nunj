@@ -1,0 +1,41 @@
+<table class="row">
+	<tr>
+		<td class="wrapper last">
+
+			<table class="twelve columns">
+				<tr>
+					<td>
+
+						<div class="feed">
+							<div class="feed__wrapper">
+
+								{% for profile in profiles %}
+
+			                        <div class="feed__container">
+			                            <a href="https://twitter.com/search?f=realtime&q=Nike" target="_blank">  
+			                                <div class="feed__item feed__item--slide" id="feed-{{loop.revindex}}">
+			                                    <div class="feed__avatar">
+			                                        <div class="feed__image"></div>
+			                                    </div>
+			                                    <div class="feed__content">
+			                                        <span class="feed__text feed__text--name">{{profile.name}}</span> <span class="feed__text--handle"></span>
+			                                        <span class="feed__text feed__text--timestamp"></span>
+			                                        <span class="feed__text feed__text--copy"></span>
+			                                    </div>
+			                                </div>
+			                            </a>
+			                        </div>
+								 
+								{% endfor %}
+
+		                    </div>
+	                    </div>
+
+					</td>
+					<td class="expander"></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
