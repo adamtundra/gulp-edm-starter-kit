@@ -58,8 +58,6 @@
 
 								{% include "partials/body-blocks.nunj" %}
 
-								{% include "partials/footer-banner.nunj" %}
-
 							</td>
 						</tr>
 					</table>

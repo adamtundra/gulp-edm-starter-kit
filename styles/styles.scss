@@ -126,7 +126,7 @@ td.padded-body {
 }
 
 $body-padding-top: 44px;
-$body-padding-bottom: 30px;
+$body-padding-bottom: 24px;
 $body-padding-side: 15px;
 
 .body-heading {
@@ -146,7 +146,6 @@ $body-padding-side: 15px;
 
 table.footer {
 	background-color: $footer-bg-color;
-	border-top: 8px solid $footer-border-color;
 
 	td {
 		color: $white;
