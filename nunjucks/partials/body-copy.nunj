@@ -1,0 +1,56 @@
+<table class="row">
+	<tr>
+		<td class="wrapper last">
+
+			<table class="twelve columns">
+
+				<tr>
+					<td class="center body-heading">
+
+						Hi <b>*|FNAME|*</b>
+
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+				<tr>
+					<td class="center body-content">
+
+						<img class="center" width="46" height="3" src="images/spacer-line.gif" />
+
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+				<tr>
+					<td class="center body-content">
+						After careful consideration from our panelists we will not <br class="hide-for-small" />be progressing you to the next stage.
+
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+
+				<tr>
+					<td class="center body-content">
+
+						We encourage you to continue with your football aspirations<br class="hide-for-small" /> as the journey never stops - get out on pitch and continue to<br class="hide-for-small" /> push yourself.
+
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+				<tr>
+					<td class="center body-content">
+
+						<b>See you next year. <br/>Nike Football</b>
+
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+			</table>
+
+		</td>
+	</tr>
+</table>

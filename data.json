@@ -1,52 +1,5 @@
 {	
 	"greeting": "Hi",
-	"firstName": "Tundra",
-	"introCopy": "Lorem ipsum dolor sit amet",
-	"profiles": [
-		{	
-			"name": "Adam"
-		},
-		{
-			"name": "Alexander"
-		},
-		{
-			"name": "Mendoza"
-		},
-		{
-			"name": "Janita"
-		},
-		{
-			"name": "Jamie"
-		},
-		{	
-			"name": "Adam"
-		},
-		{
-			"name": "Alexander"
-		},
-		{
-			"name": "Mendoza"
-		},
-		{
-			"name": "Janita"
-		},
-		{
-			"name": "Jamie"
-		},
-		{	
-			"name": "Adam"
-		},
-		{
-			"name": "Alexander"
-		},
-		{
-			"name": "Mendoza"
-		},
-		{
-			"name": "Janita"
-		},
-		{
-			"name": "Jamie"
-		}
-	]
+	"firstName": "Jonathan",
+	"preheader": "After careful consideration from our panelists we will not be progressing you to the next stage."
 }
