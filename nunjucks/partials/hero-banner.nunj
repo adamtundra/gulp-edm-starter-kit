@@ -4,9 +4,12 @@
 
 			<table class="twelve columns">
 				<tr>
-					<td>
-						<img src="images/nike-hero-banner.jpg" width="650" height="450" alt="Thank you for applying for Nike Most Wanted Australia" />
+					<td class="center">
+						<center>
+							<img class="center" src="images/nike-hero-banner.jpg" alt="Thank you for applying for Nike Most Wanted Australia" />
+						</center>
 					</td>
+					<td class="expander"></td>
 				</tr>
 			</table>
 

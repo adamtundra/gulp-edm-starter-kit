@@ -6,9 +6,9 @@
 				<tr>
 					<td class="padded-footer-top-left">
 
-						<a href="http://www.nikestore.com.au/get-help/profile/privacy-policy" target="_blank" class="footer-link">Privacy Policy</a> &nbsp;
-						<a href="http://www.nikestore.com.au/get-help" target="_blank" class="footer-link">Get Help</a>&nbsp;
-						<a href="*|UNSUB|*" target="_blank" class="footer-link">Unsubscribe</a>
+						<a href="http://www.nikestore.com.au/get-help/profile/privacy-policy" target="_blank" style="color: #FFFFFF;">Privacy Policy</a> &nbsp;
+						<a href="http://www.nikestore.com.au/get-help" target="_blank" style="color: #FFFFFF;">Get Help</a>&nbsp;
+						<a href="*|UNSUB|*" target="_blank" style="color: #FFFFFF;">Unsubscribe</a>
 
 					</td>
 					<td class="expander"></td>
@@ -17,9 +17,9 @@
 				<tr>
 					<td class="padded-footer-bottom-left">
 
-						Nike Australia Pty Ltd, PO BOX 443, Abbotsford, Victoria 3067<br/>
+						<span class="hide-links">Nike Australia Pty Ltd, PO BOX 443, Abbotsford, Victoria 3067</span><br/>
 
-						Please do not reply to this email. If you need to contact Nike with any questions or concerns, please <a target="_blank" class="footer-link" href="mailto:nikerunning.au@nike.com">click here</a>.
+						Please do not reply to this email. If you need to contact Nike with any questions or concerns, please <a target="_blank" style="color: #FFFFFF;" href="mailto:football.au@nike.com">click here</a>.
 
 					</td>
 					<td class="expander"></td>

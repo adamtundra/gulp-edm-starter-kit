@@ -6,26 +6,27 @@
 
 				<tr>
 					<td class="center body-heading">
-
-						Hi <b>*|FNAME|*</b>
-
+						<div class="body-side-padding">
+							Hi <b>*|FNAME|*</b>
+						</div>
 					</td>
 					<td class="expander"></td>
 				</tr>
 
 				<tr>
 					<td class="center body-content">
-
-						<img class="center" width="46" height="3" src="images/spacer-line.gif" />
-
+						<center>
+							<img class="center" width="46" height="3" src="images/spacer-line.gif" />
+						</center>
 					</td>
 					<td class="expander"></td>
 				</tr>
 
 				<tr>
 					<td class="center body-content">
-						After careful consideration from our panelists we will not <br class="hide-for-small" />be progressing you to the next stage.
-
+						<div class="body-side-padding">
+							After careful consideration from our panelists we will not be<br class="hide-for-small" /> progressing you to the next stage of Nike Most Wanted Australia.
+						</div>
 					</td>
 					<td class="expander"></td>
 				</tr>
@@ -33,18 +34,18 @@
 
 				<tr>
 					<td class="center body-content">
-
-						We encourage you to continue with your football aspirations<br class="hide-for-small" /> as the journey never stops - get out on pitch and continue to<br class="hide-for-small" /> push yourself.
-
+						<div class="body-side-padding">
+							We encourage you to continue with your football aspirations<br class="hide-for-small" /> as the journey never stops - get out on pitch and continue to<br class="hide-for-small" /> push yourself.
+						</div>
 					</td>
 					<td class="expander"></td>
 				</tr>
 
 				<tr>
 					<td class="center body-content">
-
-						<b>See you next year. <br/>Nike Football</b>
-
+						<div class="body-side-padding">
+							<b>See you next year. <br/>Nike Football</b>
+						</div>
 					</td>
 					<td class="expander"></td>
 				</tr>

@@ -4,9 +4,12 @@
 
 			<table class="twelve columns">
 				<tr>
-					<td>
-						<img src="images/nike-blocks.jpg" height="247" width="650" alt="Stay up to date. Keep checking the Nike Football app and Nike Football Facebook for the latest news in Nike Football." />
+					<td class="center">
+						<center>
+							<img class="center" src="images/nike-blocks.jpg" alt="Stay up to date. Keep checking the Nike Football app and Nike Football Facebook for the latest news in Nike Football." />
+						</center>
 					</td>
+					<td class="expander"></td>
 				</tr>
 			</table>
 

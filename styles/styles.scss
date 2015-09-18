@@ -19,6 +19,7 @@ $include-html-button-classes: false;
 $include-html-panel-classes: false;
 // $include-html-type-classes: false;
 
+$include-hyphens : false;
 
 /* Colours */
 
@@ -124,18 +125,18 @@ td.padded-body {
 	padding: 55px 15px!important;
 }
 
-$body-padding-top: 55px;
-$body-padding-bottom: 40px;
+$body-padding-top: 44px;
+$body-padding-bottom: 30px;
 $body-padding-side: 15px;
 
 .body-heading {
-	font-size: 28px;
-	padding: $body-padding-top $body-padding-side $body-padding-bottom!important;
+	font-size: 19px;
+	padding: $body-padding-top 0 $body-padding-bottom!important;
 }
 
 .body-content {
-	padding: 0 $body-padding-side $body-padding-bottom!important;
-	font-size: 17px;
+	padding: 0 0 $body-padding-bottom!important;
+	font-size: 19px;
 	line-height: 1.5;
 	color: #282828;
 }
@@ -210,6 +211,11 @@ a.footer-link {
 			}
 		}
 
+		.body-side-padding {
+			padding-left: $body-padding-side;
+			padding-right: $body-padding-side;
+		}
+
 		td.padded-footer-top-left, 
 		td.padded-footer-bottom-left, 
 		td.padded-footer-top-right, 
@@ -238,6 +244,10 @@ a.footer-link {
 		}
 
 	}
+
+	  table[class="body"] .hide-links a {
+	    color: inherit !important; text-decoration: none !important;
+	  }
 
 }
 }
