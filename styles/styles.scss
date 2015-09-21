@@ -1,7 +1,7 @@
 /* Settings */
 
 // see ink/components/_settings.scss
-$container-width: 650px;
+$container-width: 600px;
 $column-gutter: 20px;
 $small-container-width: 100%;
 $wrapper-padding-top: 0;
@@ -19,20 +19,13 @@ $include-html-button-classes: false;
 $include-html-panel-classes: false;
 // $include-html-type-classes: false;
 
-$include-hyphens : false;
 
 /* Colours */
 
 $white: #FFFFFF;
 $black: #000000;
 $grey: #EEEEEE;
-$charcoal: #1f1f1f;
-$green: #d8e501;
 
-/* Layout */
-
-$heading-x-padding: 30px;
-$heading-y-padding: 40px;
 
 /* Type */
 
@@ -65,10 +58,6 @@ $heading-y-padding: 40px;
 
 $bg-color: $grey;
 $main-bg-color: $white;
-$header-bg-color: $white;
-$footer-bg-color: $charcoal;
-$footer-border-color: $green;
-
 
 
 /* Desktop Styles */
@@ -96,105 +85,19 @@ table.body {
 	background-color: $bg-color;
 }
 
-// Header
-
 table.header {
-	background-color: $header-bg-color;
 }
-
-a.header-link {
-	color: $black;
-	text-decoration: underline;
-}
-
-td.padded-header-left {
-	padding: $heading-y-padding 0 $heading-y-padding $heading-x-padding!important;
-}
-
-td.padded-header-right {
-	padding: $heading-y-padding $heading-x-padding $heading-y-padding 0!important;
-}
-
-// Main
 
 table.main {
 	background-color: $main-bg-color;
 }
 
-td.padded-body {
-	padding: 55px 15px!important;
-}
-
-$body-padding-top: 44px;
-$body-padding-bottom: 24px;
-$body-padding-side: 15px;
-
-.body-heading {
-	font-size: 19px;
-	padding: $body-padding-top 0 $body-padding-bottom!important;
-}
-
-.body-content {
-	padding: 0 0 $body-padding-bottom!important;
-	font-size: 19px;
-	line-height: 1.5;
-	color: #282828;
-}
-
-
-// Footer
-
 table.footer {
-	background-color: $footer-bg-color;
-
-	td {
-		color: $white;
-		font-size: 12px;
-	}
-
-	a {
-		color: $white!important;
-		text-decoration: underline;
-	}
-
-}
-
-$footer-x-padding: 24px;
-$footer-y-padding: 30px;
-
-td.padded-footer-top-left {
-	padding: $footer-y-padding 0 17px $footer-x-padding!important;
-}
-
-td.padded-footer-bottom-left {
-	padding: 0 0 $footer-y-padding $footer-x-padding!important;
-}
-
-td.padded-footer-top-right {
-	padding: $footer-y-padding $footer-x-padding $footer-x-padding 0!important;
-	text-align: right;
-}
-
-td.padded-footer-bottom-right {
-	padding: 0 $footer-x-padding $footer-y-padding 0!important;
-	text-align: right;
-}
-
-.footer-logo {
-	float: right;
-}
-
-a.footer-link {
-	color: $white!important;
 }
 
 /* Mobile Styles */
 @if $include-html-media-query-classes {
 @media #{$small-only} {
-
-	img {
-		height: auto!important;
-	}
 
 	table[class="body"] {
 
@@ -205,48 +108,9 @@ a.footer-link {
 		}
 
 		table.footer {
-			td {
-
-			}
-		}
-
-		.body-side-padding {
-			padding-left: $body-padding-side;
-			padding-right: $body-padding-side;
-		}
-
-		td.padded-footer-top-left, 
-		td.padded-footer-bottom-left, 
-		td.padded-footer-top-right, 
-		td.padded-footer-bottom-right {
-				text-align: center!important;
-				padding-left: 15px!important;
-				padding-right: 15px!important;
-		}
-
-		td.padded-header-left {
-			padding-left: 15px!important;
-		}
-
-		td.padded-header-right {
-			padding-right: 15px!important;
-		}
-
-		td.padded-footer-bottom-left {
-			padding-bottom: 0!important;
-		}
-
-		.footer-logo {
-			float: none!important;
-			display: block!important;
-			margin: auto!important;
 		}
 
 	}
-
-	  table[class="body"] .hide-links a {
-	    color: inherit !important; text-decoration: none !important;
-	  }
 
 }
 }

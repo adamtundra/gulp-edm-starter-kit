@@ -23,26 +23,45 @@
 
 </head>
 <body>
-	<span class="preheader">Thank you for applying for Nike Most Wanted Australia. Our panelists carefully considered over 6000 applications from football players around Australia.</span>
+	<span class="preheader">Preheader text</span>
 	<table class="body">
 		<tr>
 			<td class="center" align="center" valign="top">
 				<center>
 
-					<!-- /HEADER -->
+					<!-- HEADER -->
 
-					<table class="container header">
+					<table class="row header">
 						<tr>
-							<td>
+							<td class="center" align="center">
+								<center>
 
-								{% include "partials/header.nunj" %}
+									<table class="container">
+										<tr>
+											<td class="wrapper last">
 
+												<table class="twelve columns">
+													<tr>
+														<td class="six sub-columns">
+															<img src="images/logo.png" width="70" height="20" alt="" />
+														</td>
+														<td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+															<a href="#">View online</a>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+
+											</td>
+										</tr>
+									</table>
+
+								</center>
 							</td>
 						</tr>
 					</table>
 
 					<!-- /HEADER -->
-
 
 					<!-- /MAIN -->
 
@@ -50,13 +69,25 @@
 						<tr>
 							<td>
 
-								{% include "partials/hero-banner.nunj" %}
+								<table class="row">
+									<tr>
+										<td class="wrapper last">
 
-								{% include "partials/body-copy.nunj" %}
+											<table class="twelve columns">
+												<tr>
+													<td>
+														<h1>{{greeting}}, {{firstName}}</h1>
+														<p></p>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
 
-								{% include "partials/body-tile.nunj" %}
+										</td>
+									</tr>
+								</table>
 
-								{% include "partials/body-blocks.nunj" %}
+								{% include "components/feed.nunj" %}
 
 							</td>
 						</tr>
@@ -66,12 +97,30 @@
 
 					<!-- FOOTER -->
 
-					<table class="container footer">
+					<table class="row footer">
 						<tr>
-							<td>
+							<td class="center" align="center">
+								<center>
 
-								{% include "partials/footer.nunj" %}
+									<table class="container">
+										<tr>
+											<td class="wrapper last">
 
+												<table class="twelve columns">
+													<tr>
+														<td align="center">
+														 <p class="center">&copy; 2015 Company</p>
+														 <p class="center"><a href="#" target="_blank">Unsubscribe</a></p>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+
+											</td>
+										</tr>
+									</table>
+
+								</center>
 							</td>
 						</tr>
 					</table>
