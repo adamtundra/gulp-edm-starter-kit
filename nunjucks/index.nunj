@@ -1,95 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-	<!--[if gte mso 9]><xml>
-		<o:OfficeDocumentSettings>
-		<o:AllowPNG/>
-		<o:PixelsPerInch>96</o:PixelsPerInch>
-		</o:OfficeDocumentSettings>
-		</xml>
-	<![endif]-->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width"/>
-	<title>*|MC:SUBJECT|*</title>
+{# Extend Master Template #}
 
-	<!-- Inlined Styles -->
-	<link rel="stylesheet" href="../styles/styles.css" />
+{% extends "layout/master.nunj" %}
 
-	<!-- CSS Data -->
-	<link data-premailer="ignore" rel="stylesheet" href="https://s3-ap-southeast-2.amazonaws.com/your-s3-bucket-url/data.css" />
 
-	<!-- Kinetic Styles -->
-	<link data-premailer="ignore" rel="stylesheet" href="../styles/kinetic.css" inline />
+{# Header Block #}
 
-</head>
-<body>
-	<span class="preheader">{{ preheader }}</span>
-	<table class="body">
-		<tr>
-			<td class="center" align="center" valign="top">
-				<center>
+{% block header %}
 
-					<!-- HEADER -->
+	{% include "partials/header.nunj" %}
 
-					<table class="container header">
-						<tr>
-							<td>
+{% endblock %}
 
-								{% include "partials/header.nunj" %}
 
-							</td>
-						</tr>
-					</table>
 
-					<!-- /HEADER -->
+{# Main Block #}
 
-					<!-- /MAIN -->
+{% block main %}
 
-					<table class="container main">
-						<tr>
-							<td>
+	{% include "partials/main.nunj" %}
 
-								<table class="row">
-									<tr>
-										<td class="wrapper last">
+{% endblock %}
 
-											<table class="twelve columns">
-												<tr>
-													<td>
-														<h1>{{ greeting }}, *|FNAME|*</h1>
-														<p></p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
 
-										</td>
-									</tr>
-								</table>
 
-							</td>
-						</tr>
-					</table>
+{# Footer Block #}
 
-					<!-- /MAIN -->
+{% block footer %}
 
-					<!-- FOOTER -->
+	{% include "partials/footer.nunj" %}
 
-					<table class="container footer">
-						<tr>
-							<td>
+{% endblock %}
 
-								{% include "partials/footer.nunj" %}
 
-							</td>
-						</tr>
-					</table>
-
-					<!-- /FOOTER -->
-
-				</center>
-			</td>
-		</tr>
-	</table>
-</body>
-</html>

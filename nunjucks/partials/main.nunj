@@ -1,0 +1,17 @@
+<table class="row">
+	<tr>
+		<td class="wrapper last">
+
+			<table class="twelve columns">
+				<tr>
+					<td>
+						<h1>{{ greeting }}, *|FNAME|*</h1>
+						<p></p>
+					</td>
+					<td class="expander"></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>

@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	<span class="preheader">[ Modify this preheader text in data.json ]</span>
+	<span class="preheader">{{ preheader }}</span>
 	<table class="body">
 		<tr>
 			<td class="center" align="center" valign="top">
@@ -35,29 +35,7 @@
 						<tr>
 							<td>
 
-								
-
-	<table class="row">
-	<tr>
-		<td class="wrapper last">
-
-			<table class="twelve columns">
-				<tr>
-					<td class="six sub-columns">
-						<img src="images/logo.png" width="70" height="20" alt="" />
-					</td>
-					<td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-						<a href="*|ARCHIVE|*">View onlines</a>
-					</td>
-					<td class="expander"></td>
-				</tr>
-			</table>
-
-		</td>
-	</tr>
-</table>
-
-
+								{% block header %}{% endblock %}
 
 							</td>
 						</tr>
@@ -71,27 +49,7 @@
 						<tr>
 							<td>
 
-								
-
-	<table class="row">
-	<tr>
-		<td class="wrapper last">
-
-			<table class="twelve columns">
-				<tr>
-					<td>
-						<h1>Hi, *|FNAME|*</h1>
-						<p></p>
-					</td>
-					<td class="expander"></td>
-				</tr>
-			</table>
-
-		</td>
-	</tr>
-</table>
-
-
+								{% block main %}{% endblock %}
 								
 							</td>
 						</tr>
@@ -105,34 +63,7 @@
 						<tr>
 							<td>
 
-								
-
-	<table class="row">
-	<tr>
-		<td class="wrapper last">
-
-			<table class="twelve columns">
-				<tr>
-					<td>
-						<p class="center">&copy; *|DATE:y|* [ Modify company name in data.json ]</p>
-					</td>
-					<td class="expander"></td>
-				</tr>
-				<tr style="display: none;">
-					<td align="center">
-						<center>
-							<a href="*|UNSUB|*" target="_blank" class="unsubscribe-link">Unsubscribe</a>
-						</center>
-					</td>
-					<td class="expander"></td>
-				</tr>
-			</table>
-
-		</td>
-	</tr>
-</table>
-
-
+								{% block footer %}{% endblock %}
 								
 							</td>
 						</tr>

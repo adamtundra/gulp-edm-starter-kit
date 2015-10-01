@@ -5,7 +5,7 @@
 			<table class="twelve columns">
 				<tr>
 					<td>
-						<p class="center">&copy; *|DATE:y|* Company</p>
+						<p class="center">&copy; *|DATE:y|* {{ companyName }}</p>
 					</td>
 					<td class="expander"></td>
 				</tr>
