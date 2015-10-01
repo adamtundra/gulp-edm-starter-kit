@@ -1,0 +1,19 @@
+<table class="row">
+	<tr>
+		<td class="wrapper last">
+
+			<table class="twelve columns">
+				<tr>
+					<td class="six sub-columns">
+						<img src="images/logo.png" width="70" height="20" alt="" />
+					</td>
+					<td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+						<a href="*|ARCHIVE|*">View onlines</a>
+					</td>
+					<td class="expander"></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>

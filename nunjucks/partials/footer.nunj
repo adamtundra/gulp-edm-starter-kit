@@ -1,0 +1,24 @@
+<table class="row">
+	<tr>
+		<td class="wrapper last">
+
+			<table class="twelve columns">
+				<tr>
+					<td>
+						<p class="center">&copy; *|DATE:y|* Company</p>
+					</td>
+					<td class="expander"></td>
+				</tr>
+				<tr style="display: none;">
+					<td align="center">
+						<center>
+							<a href="*|UNSUB|*" target="_blank" class="unsubscribe-link">Unsubscribe</a>
+						</center>
+					</td>
+					<td class="expander"></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
