@@ -41,9 +41,9 @@ This file is hosted externally and is not inlined anywhere on the page. It is us
 
 ### Templating
 
-[Handlebars.js](http://handlebarsjs.com/) is used as the templating language. This allows support for partials, variables, functions and offers more flexibility/organisation than regular HTML.
+[nunjucks](https://mozilla.github.io/nunjucks/) is used as the templating language. This allows support for partials, variables, functions and offers more flexibility/organisation than regular HTML.
 
-The master template file is `handlebars/index.handlebars` which also includes partials from the `handlebars/partials` directory. This gets compiled to `dist/.index.html` as the final HTML output.
+The master template file is `nunjucks/index.nunj` which also includes partials from the `nunjucks/partials` directory and components from the `nunjucks/components` directory. This gets compiled to `dist/.index.html` as the final HTML output.
 
 ### JSON Data
 
