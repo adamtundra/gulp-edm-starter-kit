@@ -43,7 +43,11 @@ This file is hosted externally and is not inlined anywhere on the page. It is us
 
 [nunjucks](https://mozilla.github.io/nunjucks/) is used as the templating language. This allows support for partials, variables, functions and offers more flexibility/organisation than regular HTML.
 
-The master template file is `nunjucks/index.nunj` which also includes partials from the `nunjucks/partials` directory and components from the `nunjucks/components` directory. This gets compiled to `dist/.index.html` as the final HTML output.
+The master template file is `nunjucks/layout/master.nunj`. This base layout can be extended by your 'index' files which live in the root /nunjucks directory. These files include partials from the `nunjucks/partials` directory and components from the `nunjucks/components` directory. This gets compiled to `dist/.index.html` as the final HTML output.
+
+#### Sumblime Nunjucks Highlighting
+
+The nunjucks syntax highligher package in Sublime Text 3 throws an error. Select `Package Control: Add Repoisitory` in Sublime and add ` https://github.com/andres-risso/sublime-nunjucks.git` then install the new nunjucks package from this repo instead. 
 
 ### JSON Data
 

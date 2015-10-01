@@ -2,6 +2,14 @@
 
 {% extends "layout/master.nunj" %}
 
+{# Preheader Block #}
+
+{% block preheader %}
+
+	Preheader text goes here.
+
+{% endblock %}
+
 
 {# Header Block #}
 
@@ -18,6 +26,8 @@
 {% block main %}
 
 	{% include "partials/main.nunj" %}
+
+	{% include "components/video.nunj" %}
 
 {% endblock %}
 
