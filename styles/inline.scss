@@ -1,0 +1,16 @@
+/*
+*	Any .scss imported here will be rendered inside 
+*	a <style> block in the <head> of the eDM HTML.
+*/
+
+// Load Mixins and Settings
+
+@import 'scss/helpers/mixins';
+
+
+// Load Components
+
+@import 'scss/inline/generic';
+@import 'scss/inline/video';
+@import 'scss/inline/feed';
+@import 'scss/inline/carousel';

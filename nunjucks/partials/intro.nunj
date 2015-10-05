@@ -1,0 +1,16 @@
+<table class="row intro">
+	<tr>
+		<td class="wrapper last">
+
+			<table class="twelve columns">
+				<tr class="intro">
+					<td class="intro">
+						Lorem ipsum dolor
+					</td>
+					<td class="expander"></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>

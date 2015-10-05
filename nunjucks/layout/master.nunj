@@ -1,79 +1,87 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-	<!--[if gte mso 9]><xml>
-		<o:OfficeDocumentSettings>
-		<o:AllowPNG/>
-		<o:PixelsPerInch>96</o:PixelsPerInch>
-		</o:OfficeDocumentSettings>
-		</xml>
-	<![endif]-->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width"/>
-	<title>*|MC:SUBJECT|*</title>
 
-	<!-- Inlined Styles -->
-	<link rel="stylesheet" href="../styles/styles.css" />
+	<head>
 
-	<!-- CSS Data -->
-	<link data-premailer="ignore" rel="stylesheet" href="https://s3-ap-southeast-2.amazonaws.com/your-s3-bucket-url/data.css" />
+		<!--[if gte mso 9]><xml>
+			<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+			</xml>
+		<![endif]-->
 
-	<!-- Kinetic Styles -->
-	<link data-premailer="ignore" rel="stylesheet" href="../styles/kinetic.css" inline />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width"/>
 
-</head>
-<body>
-	<span class="preheader">{% block preheader %}{% endblock %}</span>
-	<table class="body">
-		<tr>
-			<td class="center" align="center" valign="top">
-				<center>
+		<title>*|MC:SUBJECT|*</title>
 
-					<!-- HEADER -->
+		<!-- Inlined HTML Styles -->
+		<link rel="stylesheet" href="../styles/css/styles.css" />
 
-					<table class="container header">
-						<tr>
-							<td>
+		<!-- CSS Data -->
+		<link data-premailer="ignore" rel="stylesheet" href="https://s3-ap-southeast-2.amazonaws.com/your-s3-bucket-url/data.css" />
 
-								{% block header %}{% endblock %}
+		<!-- Inline Block Styles -->
+		<link data-premailer="ignore" rel="stylesheet" href="../styles/css/inline.css" inline />
 
-							</td>
-						</tr>
-					</table>
+	</head>
+	
+	<body>
 
-					<!-- /HEADER -->
+		<span class="preheader">{% block preheader %}{% endblock %}</span>
 
-					<!-- /MAIN -->
+		<table class="body">
+			<tr>
+				<td class="center" align="center" valign="top">
+					<center>
 
-					<table class="container main">
-						<tr>
-							<td>
+						<!-- HEADER -->
 
-								{% block main %}{% endblock %}
-								
-							</td>
-						</tr>
-					</table>
+						<table class="container header">
+							<tr>
+								<td>
 
-					<!-- /MAIN -->
+									{% block header %}{% endblock %}
 
-					<!-- FOOTER -->
+								</td>
+							</tr>
+						</table>
 
-					<table class="container footer">
-						<tr>
-							<td>
+						<!-- /HEADER -->
 
-								{% block footer %}{% endblock %}
-								
-							</td>
-						</tr>
-					</table>
+						<!-- /MAIN -->
 
-					<!-- /FOOTER -->
+						<table class="container main">
+							<tr>
+								<td>
 
-				</center>
-			</td>
-		</tr>
-	</table>
-</body>
+									{% block main %}{% endblock %}
+									
+								</td>
+							</tr>
+						</table>
+
+						<!-- /MAIN -->
+
+						<!-- FOOTER -->
+
+						<table class="container footer">
+							<tr>
+								<td>
+
+									{% block footer %}{% endblock %}
+									
+								</td>
+							</tr>
+						</table>
+
+						<!-- /FOOTER -->
+
+					</center>
+				</td>
+			</tr>
+		</table>
+
+	</body>
 </html>

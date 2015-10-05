@@ -5,14 +5,17 @@
 			<table class="twelve columns">
 				<tr>
 					<td>
-						<div class="video-wrapper" style="display: none;">
-							<a href="https://youtu.be/lD_6dG3c4co" target="_blank">
-								<video autoplay="autoplay"loop="loop" muted="muted" controls="false" class="video" style="display: none;">
-									<source src="https://s3-ap-southeast-2.amazonaws.com/tundra-litmus/nkr0051-techpack-internal-nike-edm-update/nike-new.mp4" type="video/mp4">
-								</video>
-							</a>
-						</div>
-						<a href="https://youtu.be/lD_6dG3c4co" target="_blank"><img class="center video-fallback" alt="" src="images/video_all.jpg"/></a>
+
+						<a href="https://youtu.be/lD_6dG3c4co" target="_blank">
+
+							<video autoplay="autoplay"loop="loop" muted="muted" controls="false" class="video" style="display: none;">
+								<source src="https://s3-ap-southeast-2.amazonaws.com/tundra-litmus/nkr0051-techpack-internal-nike-edm-update/nike-new.mp4" type="video/mp4">
+							</video>
+							
+							<img class="center video-fallback" alt="" src="images/video_all.jpg"/>
+
+						</a>
+
 					</td>
 					<td class="expander"></td>
 				</tr>

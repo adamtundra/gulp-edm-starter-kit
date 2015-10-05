@@ -40,7 +40,7 @@ var paths = {
 		includes: 'nunjucks/',
 		html: 'templates/*.tpl.html',
 		sass: 'styles/**/*.scss',
-		styles: 'styles/',
+		styles: 'styles/css',
 		images: 'images/**/*',
 		bower: 'bower_components/'
 	},

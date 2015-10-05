@@ -1,0 +1,94 @@
+// Detect iOS Devices
+
+@mixin detectiOS {
+
+    // iPad
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        @content;
+    }
+
+    // iPad 1 & 2, iPad Mini
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+    }
+
+    // Retina iPad
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+        @content;
+    }
+
+    // iPhone 5
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 1){
+        @content;
+    }
+
+    // iPhone 5S
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2){
+        @content;
+    }
+
+    // iPhone 2G/3G/3GS
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1){
+        @content;
+    }
+
+    // iPhone 4/4S
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+        @content;
+    }
+
+    // iPhone 6
+    @media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+        @content;
+    }
+
+    // iPhone 6+
+    @media screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+        @content;
+    }
+
+}
+
+
+// Detect Webkit Clients
+
+@mixin detectWebkit {
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+       @content;
+    }
+
+}
+
+
+// Hide Video & Show Fallback Image
+
+@mixin hideVideo {
+
+    .ExternalClass video.video,
+    div.video-wrap,
+    video.video {
+        display: none!important;
+    }
+
+    img.video-fallback {
+        display: block!important;
+    }
+
+}
+
+
+// Show Video & Hide Fallback Image
+
+@mixin showVideo {
+
+    div.video-wrap,
+    video.video {
+        display: inline-block!important;
+    }
+
+    img.video-fallback {
+        display: none!important;
+    }
+
+}

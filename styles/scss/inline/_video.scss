@@ -1,0 +1,14 @@
+@include detectWebkit {
+	@include showVideo;
+}
+
+@include detectiOS {
+	@include hideVideo;
+}
+
+// Hide the Video Controls
+
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls {
+	display: none!important;
+}

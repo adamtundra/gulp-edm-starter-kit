@@ -29,6 +29,8 @@
 
 	{% include "components/video.nunj" %}
 
+	{% include "partials/intro.nunj" %}
+
 {% endblock %}
 
 
