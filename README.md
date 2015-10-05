@@ -26,18 +26,22 @@ Starts a server with browsersync in the `/dist` directory: `http://localhost:300
 
 ### Stylesheets
 
-`/styles/styles.scss` is compiled to `/styles/styles.css` and `/styles/kinetic.scss` is compiled to `/styles/kinetic.css`.
+`/styles/styles.scss` is compiled to `/styles/styles.css` and `/styles/kinetic.scss` is compiled to `/styles/inline.css`.
 
 There are 3 CSS files included in the `<head>` tag:
 
 #### styles.css
 These styles are are inlined into any HTML elements that match any ID/class inside the .css file.
 
-#### kinetic.css *(optional)*
+#### inline.css
 These styles are rendered as an inline `<style>` block in the `<head>` of the HTML. Any styles that take advantage of keyframes/animation or other CSS3 features should be rendered here. If inlined styles aren't required, feel free to remove the tag from the HTML.
 
 #### data.css *(optional)*
 This file is hosted externally and is not inlined anywhere on the page. It is used for pulling in dynamic pseudo element 'content' data from a server generated .css file. If dynamic data isn't required, feel free to remove this tag from the HTML.
+
+#### Partials
+
+The styles for the eDM have been split out into seperate 
 
 ### Templating
 
