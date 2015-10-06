@@ -67,6 +67,14 @@ CSS is inlined using Premailer
 Images are optimised using Imagemin
 HTML and images are saved to the `/dist` directory
 
+### Packaging
+
+```
+gulp zip
+```
+
+Use this to zip the contents of `/dist` into a .zip file which will be saved in the root using the name from `package.json`. This zip can be uploaded directly to MailChimp to be used as a custom template.
+
 ## Testing
 
 ```
