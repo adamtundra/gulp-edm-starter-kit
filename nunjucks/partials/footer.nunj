@@ -1,19 +1,43 @@
-<table class="row">
+<table class="row footer">
 	<tr>
-		<td class="wrapper last">
+		<td class="wrapper">
 
-			<table class="twelve columns">
+			<table class="eight columns">
 				<tr>
-					<td>
-						<p class="center">&copy; *|DATE:y|* {{ companyName }}</p>
+					<td class="footer__top-left">
+						<a href="#" target="_blank" class="footer__link">Privacy Policy</a> &nbsp;
+						<a href="#" target="_blank" class="footer__link">Get Help</a>&nbsp;
+						<a href="*|UNSUB|*" target="_blank" class="footer__link">Unsubscribe</a>
 					</td>
 					<td class="expander"></td>
 				</tr>
-				<tr style="display: none;">
-					<td align="center">
-						<center>
-							<a href="*|UNSUB|*" target="_blank" class="unsubscribe-link">Unsubscribe</a>
-						</center>
+
+				<tr>
+					<td class="footer__bottom-left">
+						<span class="appleLinksLight">[Insert Company Address]</span><br/>
+						Please do not reply to this email. If you need to contact [Insert Company Name] with any questions or concerns, please <a target="_blank" class="footer__link" href="mailto:#">click here</a>.
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+
+			</table>
+
+		</td>
+		<td class="wrapper last">
+
+			<table class="four columns">
+
+				<tr>
+					<td class="footer__top-right">
+						&copy; [Insert Company Name] All Rights Reserved.
+					</td>
+					<td class="expander"></td>
+				</tr>
+
+				<tr>
+					<td class="footer__bottom-right">
+						<img class="footer__logo" src="http://placehold.it/60x44?text=Logo">
 					</td>
 					<td class="expander"></td>
 				</tr>

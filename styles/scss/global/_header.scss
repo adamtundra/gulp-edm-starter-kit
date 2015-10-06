@@ -1,3 +1,26 @@
+// Heading Settings
+
+$heading-x-padding: 30px;
+$heading-y-padding: 40px;
+
+$heading-link-color: $black;
+$header-bg-color: $white;
+
+// Header
+
 table.header {
-	
+	background-color: $header-bg-color;
+}
+
+a.header__link {
+	color: $heading-link-color;
+	text-decoration: underline;
+}
+
+td.header__left {
+	padding: $heading-y-padding 0 $heading-y-padding $heading-x-padding!important;
+}
+
+td.header__right {
+	padding: $heading-y-padding $heading-x-padding $heading-y-padding 0!important;
 }

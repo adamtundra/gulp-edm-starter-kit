@@ -1,12 +1,11 @@
-<table class="row">
+<table class="row hero">
 	<tr>
 		<td class="wrapper last">
 
 			<table class="twelve columns">
-				<tr>
-					<td>
-						<h1>{{ greeting }}, *|FNAME|*</h1>
-						<p></p>
+				<tr class="hero">
+					<td class="hero">
+						<img src="http://placehold.it/650x220?text=Hero+Banner">
 					</td>
 					<td class="expander"></td>
 				</tr>

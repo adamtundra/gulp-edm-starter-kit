@@ -1,3 +1,46 @@
+// Footer Settings
+
+$footer-x-padding: 24px;
+$footer-y-padding: 30px;
+$footer-background-color: $black;
+$footer-text-color: $white;
+$footer-font-size: 12px;
+
+// Footer
+
 table.footer {
-	
+	background-color: $black;
+
+	td {
+		color: $footer-text-color;
+		font-size: $footer-font-size;
+	}
+
+}
+
+td.footer__top-left {
+	padding: $footer-y-padding 0 17px $footer-x-padding!important;
+}
+
+td.footer__bottom-left {
+	padding: 0 0 $footer-y-padding $footer-x-padding!important;
+}
+
+td.footer__top-right {
+	padding: $footer-y-padding $footer-x-padding $footer-x-padding 0!important;
+	text-align: right;
+}
+
+td.footer__bottom-right {
+	padding: 0 $footer-x-padding $footer-y-padding 0!important;
+	text-align: right;
+}
+
+img.footer__logo {
+	float: right;
+}
+
+a.footer__link {
+	color: $white;
+	text-decoration: underline;
 }

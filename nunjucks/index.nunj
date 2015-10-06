@@ -6,7 +6,7 @@
 
 {% block preheader %}
 
-	Preheader text goes here.
+	{% include "partials/preheader.nunj" %}
 
 {% endblock %}
 
@@ -25,9 +25,7 @@
 
 {% block main %}
 
-	{% include "partials/main.nunj" %}
-
-	{% include "components/video.nunj" %}
+	{% include "partials/hero.nunj" %}
 
 	{% include "partials/intro.nunj" %}
 
@@ -42,5 +40,3 @@
 	{% include "partials/footer.nunj" %}
 
 {% endblock %}
-
-

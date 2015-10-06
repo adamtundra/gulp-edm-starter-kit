@@ -1,35 +1,22 @@
-/* Settings */
+// Ink Settings
 
-// see ink/components/_settings.scss
-$container-width: 600px;
-$column-gutter: 20px;
+// See ink/components/_settings.scss
+
+$container-width: $main-container-width;
+$column-gutter: $gutter-size;
 $small-container-width: 100%;
 $wrapper-padding-top: 0;
 $column-cell-padding-bottom: 0;
 $sub-column-padding-right: 0;
 
-// $include-html-normalize-classes: false;
-// $include-html-global-classes: false;
-// $include-html-outlook-first-class: false;
-// $include-html-media-query-classes: false;
-// $include-html-alignment-classes: false;
-// $include-html-grid-classes: false;
 $include-html-block-grid-classes: false;
 $include-html-button-classes: false;
 $include-html-panel-classes: false;
-// $include-html-type-classes: false;
+
+$text-padding: $text-padding-width;
 
 
-/* Colours */
-
-$white: #FFFFFF;
-$black: #000000;
-$grey: #EEEEEE;
-
-$bg-color: $grey;
-$main-bg-color: $white;
-
-/* Type */
+// Type
 
 // $base-font-color: $black;
 // $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

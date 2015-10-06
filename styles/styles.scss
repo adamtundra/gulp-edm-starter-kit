@@ -1,10 +1,12 @@
 // Global Settings
 
-@import 'scss/helpers/settings';
+@import 'scss/settings/loader';
+
 
 // Ink Framework
 
 @import "ink";
+
 
 // Desktop Styles
 
@@ -12,6 +14,7 @@
 @import 'scss/global/header';
 @import 'scss/global/main';
 @import 'scss/global/footer';
+
 
 // Partials
 

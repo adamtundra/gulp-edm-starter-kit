@@ -1,11 +1,31 @@
-table.header {
-	
+// Small Head styles
+
+td.header__left {
+	padding-left: $text-padding-width!important;
 }
 
-table.main {
-
+td.header__right {
+	padding-right: $text-padding-width!important;
 }
 
-table.footer {
-	
+
+// Small footer styles
+
+td.footer__top-left, 
+td.footer__bottom-left, 
+td.footer__top-right, 
+td.footer__bottom-right {
+		text-align: center!important;
+		padding-left: $text-padding-width!important;
+		padding-right: $text-padding-width!important;
+}
+
+td.footer__bottom-left {
+	padding-bottom: 0!important;
+}
+
+.footer__logo {
+	float: none!important;
+	display: block!important;
+	margin: auto!important;
 }

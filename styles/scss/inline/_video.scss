@@ -1,3 +1,5 @@
+// Show Video for Webkit and hide on iOS devices
+
 @include detectWebkit {
 	@include showVideo;
 }

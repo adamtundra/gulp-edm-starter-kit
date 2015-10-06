@@ -1,18 +1,19 @@
-<table class="row">
+<table class="row header">
 	<tr>
 		<td class="wrapper last">
 
-			<table class="twelve columns">
-				<tr>
-					<td class="six sub-columns">
-						<img src="images/logo.png" width="70" height="20" alt="" />
-					</td>
-					<td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-						<a href="*|ARCHIVE|*">View online</a>
-					</td>
-					<td class="expander"></td>
-				</tr>
-			</table>
+				<table class="twelve columns">
+					<tr>
+						<td class="three sub-columns header__left">
+							<img class="header__image" src="http://placehold.it/100x50?text=Logo" alt="Logo" />
+						</td>
+						<td class="nine sub-columns header__right last" style="text-align:right; vertical-align:middle;">
+							<a class="header__link" href="*|ARCHIVE|*">View online</a> &nbsp;&nbsp;
+							<b>[Tagline]</b>
+						</td>
+						<td class="expander"></td>
+					</tr>
+				</table>
 
 		</td>
 	</tr>

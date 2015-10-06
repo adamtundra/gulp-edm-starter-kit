@@ -5,12 +5,15 @@
 
 // Load Mixins and Settings
 
+@import 'scss/settings/loader';
 @import 'scss/helpers/mixins';
 
 
 // Load Components
 
-@import 'scss/inline/generic';
-@import 'scss/inline/video';
-@import 'scss/inline/feed';
-@import 'scss/inline/carousel';
+@import 'scss/inline/global';
+// @import 'scss/inline/video';
+// @import 'scss/inline/feed';
+// @import 'scss/inline/carousel';
+// @import 'scss/inline/menu';
+// @import 'scss/inline/animation';
