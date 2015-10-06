@@ -5,7 +5,13 @@
 			<table class="twelve columns">
 				<tr class="hero">
 					<td class="hero">
-						<img src="http://placehold.it/650x220?text=Hero+Banner">
+
+						{# / Content #}
+
+						<img alt="Hero Banner" src="http://placehold.it/650x220?text=Hero+Banner">
+
+						{# / Content #}
+
 					</td>
 					<td class="expander"></td>
 				</tr>

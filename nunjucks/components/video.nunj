@@ -6,6 +6,8 @@
 				<tr>
 					<td>
 
+						{# Content #}
+						
 						<a href="https://youtu.be/lD_6dG3c4co" target="_blank">
 
 							<video autoplay="autoplay"loop="loop" muted="muted" controls="false" class="video" style="display: none;">
@@ -15,6 +17,8 @@
 							<img class="center video-fallback" alt="" src="images/video-fallback-image.jpg"/>
 
 						</a>
+
+						{# Content #}
 
 					</td>
 					<td class="expander"></td>

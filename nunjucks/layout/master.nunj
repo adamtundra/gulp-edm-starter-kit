@@ -16,13 +16,13 @@
 
 		<title>*|MC:SUBJECT|*</title>
 
-		<!-- Inlined HTML Styles -->
+		{# Inlined HTML Styles #}
 		<link rel="stylesheet" href="../styles/css/styles.css" />
 
-		<!-- CSS Data -->
-		<link data-premailer="ignore" rel="stylesheet" href="https://s3-ap-southeast-2.amazonaws.com/your-s3-bucket-url/data.css" />
+		{# CSS Data (Uncomment if needed) #}
+		{# <link data-premailer="ignore" rel="stylesheet" href="https://s3-ap-southeast-2.amazonaws.com/your-s3-bucket-url/data.css" /> #}
 
-		<!-- Inline Block Styles -->
+		{# Inline Block Styles #}
 		<link data-premailer="ignore" rel="stylesheet" href="../styles/css/inline.css" inline />
 
 	</head>
@@ -36,7 +36,7 @@
 				<td class="center" align="center" valign="top">
 					<center>
 
-						<!-- HEADER -->
+						{# Header #}
 
 						<table class="container header">
 							<tr>
@@ -48,9 +48,9 @@
 							</tr>
 						</table>
 
-						<!-- /HEADER -->
+						{# / Header #}
 
-						<!-- /MAIN -->
+						{# Main #}
 
 						<table class="container main">
 							<tr>
@@ -62,9 +62,9 @@
 							</tr>
 						</table>
 
-						<!-- /MAIN -->
+						{# / Main #}
 
-						<!-- FOOTER -->
+						{# Footer #}
 
 						<table class="container footer">
 							<tr>
@@ -76,7 +76,7 @@
 							</tr>
 						</table>
 
-						<!-- /FOOTER -->
+						{# / Footer #}
 
 					</center>
 				</td>

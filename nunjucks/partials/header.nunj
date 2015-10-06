@@ -5,11 +5,23 @@
 				<table class="twelve columns">
 					<tr>
 						<td class="three sub-columns header__left">
-							<img class="header__image" src="http://placehold.it/100x50?text=Logo" alt="Logo" />
+
+							{# Content #}
+
+							<img alt="Logo" class="header__image" src="http://placehold.it/100x50?text=Logo" />
+
+							{# / Content #}
+
 						</td>
 						<td class="nine sub-columns header__right last" style="text-align:right; vertical-align:middle;">
+
+							{# Content #}
+
 							<a class="header__link" target="_blank" href="*|ARCHIVE|*">View online</a> &nbsp;&nbsp;
 							<b>[Tagline]</b>
+
+							{# / Content #}
+
 						</td>
 						<td class="expander"></td>
 					</tr>

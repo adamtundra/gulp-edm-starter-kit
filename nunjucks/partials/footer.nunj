@@ -5,17 +5,29 @@
 			<table class="eight columns">
 				<tr>
 					<td class="footer__top-left">
+
+						{# Content #}
+
 						<a href="#" target="_blank" class="footer__link">Privacy Policy</a> &nbsp;
 						<a href="#" target="_blank" class="footer__link">Get Help</a>&nbsp;
 						<a href="*|UNSUB|*" target="_blank" class="footer__link">Unsubscribe</a>
+
+						{# / Content #}
+
 					</td>
 					<td class="expander"></td>
 				</tr>
 
 				<tr>
 					<td class="footer__bottom-left">
+
+						{# Content #}
+
 						<span class="appleLinksLight">{{companyAddress}}</span><br/>
 						Please do not reply to this email. If you need to contact {{companyName}} with any questions or concerns, please <a target="_blank" class="footer__link" href="mailto:#">click here</a>.
+
+						{# / Content #}
+
 					</td>
 					<td class="expander"></td>
 				</tr>
@@ -30,14 +42,26 @@
 
 				<tr>
 					<td class="footer__top-right">
+
+						{# Content #}
+
 						&copy; {{companyName}} All Rights Reserved.
+
+						{# / Content #}
+
 					</td>
 					<td class="expander"></td>
 				</tr>
 
 				<tr>
 					<td class="footer__bottom-right">
-						<img class="footer__logo" src="http://placehold.it/100x33?text=Logo">
+
+						{# Content #}
+
+						<img class="footer__logo" alt="Logo" src="http://placehold.it/100x33?text=Logo">
+
+						{# / Content #}
+
 					</td>
 					<td class="expander"></td>
 				</tr>

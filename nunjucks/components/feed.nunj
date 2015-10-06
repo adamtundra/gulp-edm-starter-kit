@@ -5,6 +5,8 @@
 			<table class="twelve columns">
 				<tr>
 					<td>
+					
+						{# Content #}
 
 						<div class="feed">
 							<div class="feed__wrapper">
@@ -30,6 +32,8 @@
 
 		                    </div>
 	                    </div>
+
+	                    {# / Content #}
 
 					</td>
 					<td class="expander"></td>
