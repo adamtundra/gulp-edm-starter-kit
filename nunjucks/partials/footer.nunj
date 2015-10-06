@@ -37,7 +37,7 @@
 
 				<tr>
 					<td class="footer__bottom-right">
-						<img class="footer__logo" src="http://placehold.it/60x44?text=Logo">
+						<img class="footer__logo" src="http://placehold.it/100x33?text=Logo">
 					</td>
 					<td class="expander"></td>
 				</tr>

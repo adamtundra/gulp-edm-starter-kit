@@ -8,7 +8,7 @@
 							<img class="header__image" src="http://placehold.it/100x50?text=Logo" alt="Logo" />
 						</td>
 						<td class="nine sub-columns header__right last" style="text-align:right; vertical-align:middle;">
-							<a class="header__link" href="*|ARCHIVE|*">View online</a> &nbsp;&nbsp;
+							<a class="header__link" target="_blank" href="*|ARCHIVE|*">View online</a> &nbsp;&nbsp;
 							<b>[Tagline]</b>
 						</td>
 						<td class="expander"></td>
