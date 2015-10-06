@@ -1,6 +1,7 @@
 // Intro Settings
 
 $intro-background-color: $white;
+$intro-color: $black;
 $intro-padding: 50px;
 
 $intro-heading-font-size: 28px;
@@ -16,19 +17,21 @@ table.intro {
 }
 
 td.intro__heading {
+	color: $intro-color;
 	font-size: $intro-heading-font-size;
 	line-height: $intro-heading-line-height;
 	padding: {
 		top: $intro-padding!important;
-		bottom: ($intro-padding / 2)!important;
+		bottom: ($intro-padding / 3)!important;
 	} 
 }
 
 td.intro__content {
+	color: $intro-color;	
 	font-size: $intro-content-font-size;
 	line-height: $intro-content-line-height;
 	padding: {
-		top: ($intro-padding / 2)!important;
+		top: ($intro-padding / 3)!important;
 		bottom: $intro-padding!important;
 	} 
 }

@@ -1,0 +1,37 @@
+// Intro Settings
+
+$cta-background-color: $primary-color;
+$cta-color: $black;
+$cta-padding: 50px;
+
+$cta-heading-font-size: 28px;
+$cta-heading-line-height: 38px;
+
+$cta-content-font-size: 17px;
+$cta-content-line-height: 28px;
+
+// Table Elements
+
+table.cta {
+	background: $cta-background-color!important;
+}
+
+td.cta__heading {
+	color: $cta-color;
+	font-size: $cta-heading-font-size;
+	line-height: $cta-heading-line-height;
+	padding: {
+		top: $cta-padding!important;
+		bottom: ($cta-padding / 3)!important;
+	} 
+}
+
+td.cta__content {
+	color: $cta-color;
+	font-size: $cta-content-font-size;
+	line-height: $cta-content-line-height;
+	padding: {
+		top: ($cta-padding / 3)!important;
+		bottom: $cta-padding!important;
+	} 
+}

@@ -1,7 +1,6 @@
 {	
 	"greeting": "Hi",
 	"firstName": "Tundra",
-	"introCopy": "Lorem ipsum dolor sit amet",
 	"companyName": "[ Modify company name in data.json ]",
 	"preheader": "[ Modify this preheader text in data.json ]",
 	"profiles": [

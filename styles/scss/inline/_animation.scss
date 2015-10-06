@@ -1,98 +1,24 @@
-// Animation Settings
+// Intro Block Animations
 
-$animation-distance: 20px;
+$intro-animation-speed: 1.2s;
 
-
-// Keyframe Animations
-
-@-webkit-keyframes slideUp {
-	0% {
-		transform: translateY($animation-distance);
-		-webkit-transform: translateY($animation-distance);
-		opacity: 0;
-	}
-	35% {
-		transform: translateY($animation-distance);
-		-webkit-transform: translateY($animation-distance);
-		opacity: 0;
-	}
-	90% {
-		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
+.intro__heading {
+	@include animate(slideUpOne, $intro-animation-speed);
 }
 
-@-webkit-keyframes slideFromTop {
-	0% {
-		transform: translateY($animation-distance);
-		-webkit-transform: translateY($animation-distance);
-		opacity: 0;
-	}
-	35% {
-		transform: translateY($animation-distance);
-		-webkit-transform: translateY($animation-distance);
-		opacity: 0;
-	}
-	90% {
-		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
+.intro__content {
+	@include animate(slideUpTwo, $intro-animation-speed);
 }
 
-@-webkit-keyframes slideFromLeft {
-	0% {
-		transform: translateX(-$animation-distance);
-		-webkit-transform: translateX(-$animation-distance);
-		opacity: 0;
-	}
-	35% {
-		transform: translateX(-$animation-distance);
-		-webkit-transform: translateX(-$animation-distance);
-		opacity: 0;
-	}
-	90% {
-		transform: translateX(0);
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(0);
-		-webkit-transform: translateY(0);
-		opacity: 1;
-	}
+
+// CTA Block Animations
+
+$cta-animation-speed: 1.2s;
+
+.cta__heading {
+	@include animate(slideUpThree, $cta-animation-speed);
 }
 
-@-webkit-keyframes slideFromRight {
-	0% {
-		transform: translateX($animation-distance);
-		-webkit-transform: translateX($animation-distance);
-		opacity: 0;
-	}
-	35% {
-		transform: translateX($animation-distance);
-		-webkit-transform: translateX($animation-distance);
-		opacity: 0;
-	}
-	90% {
-		transform: translateX(0);
-		-webkit-transform: translateX(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(0);
-		-webkit-transform: translateX(0);
-		opacity: 1;
-	}
+.cta__content {
+	@include animate(slideUpFour, $cta-animation-speed);
 }

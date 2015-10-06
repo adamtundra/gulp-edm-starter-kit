@@ -7,6 +7,7 @@
 
 @import 'scss/settings/loader';
 @import 'scss/helpers/mixins';
+@import 'scss/helpers/animations';
 
 
 // Load Components
@@ -16,4 +17,4 @@
 // @import 'scss/inline/feed';
 // @import 'scss/inline/carousel';
 // @import 'scss/inline/menu';
-// @import 'scss/inline/animation';
+@import 'scss/inline/animation';

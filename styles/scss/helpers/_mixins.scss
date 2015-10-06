@@ -92,3 +92,10 @@
     }
 
 }
+
+// Use Keyframe animations from 'helpers/_animations.scss'
+
+@mixin animate($animation-name, $animation-duration) {
+    animation: $animation-name $animation-duration ease;
+    -webkit-animation: $animation-name $animation-duration ease;
+}

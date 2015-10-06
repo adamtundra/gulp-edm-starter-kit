@@ -14,8 +14,8 @@
 
 				<tr>
 					<td class="footer__bottom-left">
-						<span class="appleLinksLight">[Insert Company Address]</span><br/>
-						Please do not reply to this email. If you need to contact [Insert Company Name] with any questions or concerns, please <a target="_blank" class="footer__link" href="mailto:#">click here</a>.
+						<span class="appleLinksLight">{{companyAddress}}</span><br/>
+						Please do not reply to this email. If you need to contact {{companyName}} with any questions or concerns, please <a target="_blank" class="footer__link" href="mailto:#">click here</a>.
 					</td>
 					<td class="expander"></td>
 				</tr>
@@ -30,7 +30,7 @@
 
 				<tr>
 					<td class="footer__top-right">
-						&copy; [Insert Company Name] All Rights Reserved.
+						&copy; {{companyName}} All Rights Reserved.
 					</td>
 					<td class="expander"></td>
 				</tr>
