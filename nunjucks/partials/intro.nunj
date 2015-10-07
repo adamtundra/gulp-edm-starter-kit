@@ -18,11 +18,17 @@
 				</tr>
 
 				<tr class="intro">
-					<td class="intro__content text-pad">
+					<td class="intro__content center text-pad">
 
-						{# Content #}
+						{# Content - Example of art directing text on larger while being fluid on small #}
 
-						The lysine contingency - it's intended to prevent the spread of the animals is case they ever got off the island. Dr. Wu inserted a gene that makes a single faulty enzyme in protein metabolism. The animals can't manufacture the amino acid lysine. Unless they're continually supplied with lysine by us, they'll slip into a coma and die.
+						Do you see any Teletubbies in here? Do you see a slender plastic tag<br class="hide-for-small"> 
+						clipped to my shirt with my name printed on it? Do you see a little<br class="hide-for-small"> 
+						Asian child with a blank expression on his face sitting outside on<br class="hide-for-small"> 
+						a mechanical helicopter that shakes when you put quarters in it?<br class="hide-for-small"> 
+						No? Well, that's what you see at a toy store. And you must think<br class="hide-for-small"> 
+						you're in a toy store, because you're here shopping for<br class="hide-for-small"> 
+						an infant named Jeb.
 
 						{# / Content #}
 						

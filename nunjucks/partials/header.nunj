@@ -6,9 +6,9 @@
 					<tr>
 						<td class="three sub-columns header__left">
 
-							{# Content #}
+							{# Content - Retina Image #}
 
-							<img alt="Logo" class="header__image" src="http://placehold.it/100x50?text=Logo" />
+							<img alt="Logo" class="header__image" style="width: 100px; height: 50px;" width="100" height="50" src="http://placehold.it/200x100?text=Logo" />
 
 							{# / Content #}
 

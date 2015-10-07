@@ -1,0 +1,30 @@
+// Columns Settings
+
+$columns-background-color: $primary-color;
+$columns-color: $black;
+$columns-padding: 44px;
+
+$columns-heading-font-size: 28px;
+$columns-heading-line-height: 38px;
+
+$columns-content-font-size: 17px;
+$columns-content-line-height: 28px;
+
+// Columns Blocks
+
+td.columns__column {
+	font-size: $columns-content-font-size;
+	line-height: $columns-content-line-height;
+	padding: {
+		top: $columns-padding!important;
+		bottom: $columns-padding!important;
+	}
+}
+
+td.columns__column--one {
+	background: $columns-background-color;
+}
+
+td.columns__column--two {
+	background: $white;
+}

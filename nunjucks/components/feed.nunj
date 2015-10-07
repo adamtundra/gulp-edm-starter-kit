@@ -5,8 +5,8 @@
 			<table class="twelve columns">
 				<tr>
 					<td>
-					
-						{# Content #}
+
+						{# Content - Edit this in the data.json file, should be rendered form data.css #}
 
 						<div class="feed">
 							<div class="feed__wrapper">

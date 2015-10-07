@@ -7,9 +7,9 @@
 				<tr class="cta">
 					<td class="cta__heading center text-pad">
 
-						{# Content #}
+						{# Content - Retina Image #}
 
-						<img class="center" alt="Image Heading" src="http://placehold.it/450x80/c2cd09/1f1f1f?text=Centered Image Heading"/>
+						<img class="center" width="225" height="40" style="width: 225px; height: 40px;" alt="Image Heading" src="http://placehold.it/450x80/000000/FFFFFF?text=Centered Image Heading"/>
 
 						{# / Content #}
 
@@ -22,8 +22,8 @@
 
 						{# Content #}
 
-						Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
-
+						Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price.
+						
 						{# / Content #}
 
 					</td>
